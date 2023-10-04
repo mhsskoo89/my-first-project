@@ -1,0 +1,909 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration:none;
+}
+/* globel rules */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* end globel rules */
+.header {
+    width:100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+.header .logo {
+    color:crimson;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.list{
+    float: right;
+    margin-top: -25px;
+    margin-right: 100px;
+}
+.list  li{ 
+    list-style: none;
+    display: inline-block;
+    
+}
+.list li  a{
+    color:crimson;
+    margin-left: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.home { 
+    background-image: url(../image/ian-dooley-FoF0w-d6Z74-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    text-align: center;
+    width:320%; 
+    max-width: 100%;
+}
+.h-home {
+    margin: o;
+    color:crimson;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.p-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:crimson;
+    letter-spacing: 1.5px;
+    line-height: 1.8px;
+    font-size: 20px;
+}
+.btn-home1{
+    min-width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+}
+.btn-home1:hover{
+    opacity: 0.5;
+}
+.btn-home2{
+    min-width: 150px;
+    background-color:crimson;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+}
+.btn-home2:hover{
+    opacity: 0.5;
+
+}
+/* ///////////////////////////////////////////////////////////////////// */
+.about{
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 700px;
+    background-color:white;
+    overflow: hidden;
+}
+.h-about{
+    text-align: center;
+    color:crimson;
+    margin-top: -50px;
+    font-size: 35px;
+}
+.line-h{
+    height: 5px;
+    width: 50px;
+    background-color:black;
+    margin-left:545px;
+    margin-top: 20px;
+}
+.about-c{
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: white;
+    float: left;
+    padding: 5px;
+    margin-top: 70px;
+    margin-left: 60px;
+    position: relative;
+    
+
+
+}
+.about-c::after{
+    position: absolute;
+    content: "";
+
+    height: 0;
+    width: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    transition: 1s;
+    opacity: 1;
+ 
+}
+.about-c:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.about-c:hover .title-content{
+    color:crimson;
+    
+}
+.i1{
+    margin-left: 135px;
+    margin-top: 20px;
+    color:crimson;
+}
+.i2{
+    margin-left: 135px;
+    margin-top: 15px;
+    color:crimson;
+}
+.i3{
+    margin-left: 135px;
+    margin-top: 15px;
+    color:crimson;
+}
+.title-content{
+    text-align: center;
+    margin-top: 30px;
+    text-transform: capitalize;
+
+}
+.about-c .p-c{
+    text-align: center;
+    width:100%;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-style:normal;
+}
+.about-c a{
+    text-decoration: none;
+    display: block;
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+    color:crimson;
+
+
+}
+/* /////////////////////////////////////////////////////////////////////// */
+.featured{
+    padding-top: 100px;
+    /* background-color:#a8a8a8; */
+    background-color:#999;
+    height: 900px;
+    
+}
+.featured-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 35px;
+    letter-spacing: 1;
+    
+}
+.featured-line{
+    height: 5px;
+    width: 50px;
+    background-color:black;
+    margin-left: 540px;
+}
+.featured-img{
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/ian-dooley-FoF0w-d6Z74-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+.featured-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    
+}
+.featured-cat{
+    margin-top: 100px;
+    color:crimson
+}
+.featured-para{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.featuredi1{
+    margin-top: 10px;
+}
+.featured-overlay a{
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+}
+.featured-img:hover .featured-overlay {
+    display: block;
+}
+.featured1{
+    float: left;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+.featured2{
+    float: left;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.offer{
+    padding-top: 100px;
+    height: 650px;
+
+}
+.h-offer{
+    text-align: center;
+    text-transform: capitalize;
+    color:crimson ;
+    text-decoration: none;
+
+}
+.offer-line{
+   background-color:black;
+   width: 40px;
+   height: 5px;
+   margin-left: 550px;
+}
+.offer-div1{
+    width: 330px;
+    height: 180px;
+    border: 2px solid #a8a8a8;
+    background-color: white;
+    float: left;
+    position: relative;
+    padding: 30px 15px 30px 70px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.h-offer-div1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-right: 30px;
+    margin-top: 5px;
+    color:black;
+    
+}
+.i1-offer{
+    position: absolute;
+    top: 28;
+    left: 25; 
+    font-size: 2em;
+    color:crimson;
+}
+.p-offer-div1{
+    text-transform: capitalize;
+    line-height: 1.6;
+    color: #999;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.offer-div1::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    transition: 1s;
+    background-color: black;
+    opacity: 1;
+
+}
+.offer-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.offer-div1:hover .h-offer-div1{
+    color: crimson;
+}
+.offer-div2{
+    width: 330px;
+    height: 180px;
+    border: 2px solid #a8a8a8;
+    background-color: white;
+    float: left;
+    position: relative;
+    padding: 30px 15px 30px 70px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.offer-div2::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    opacity: 1;
+}
+.offer-div2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.offer-div2:hover .h-offer-div1{
+    color: crimson;
+}
+/* ////////////////////////////////////////////////////////////// ///////////////////*/
+.choos-us{
+    padding-top: 100px;
+    background-color:#999;
+    height: 700px;
+}
+.titparach-div{
+    width: 50%;
+}
+.choose-title{
+    font-size: 40px;
+    color: crimson;
+    text-transform: capitalize;
+
+}
+.choose-line{
+    background-color:black;
+    width: 60px;
+    height: 5px;
+    margin-left: 10px;
+    
+}
+.choose-para{
+    font-size: 20px;
+    color: black;
+    margin-top: 60px;
+}
+.i1-choos{
+    font-size: 20px;
+    margin-top: 20px;
+    color:crimson;
+}
+.choose-span{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    text-decoration:none;
+}
+.picch-div{
+    float: right;
+    position: relative;
+}
+.picch-div img{
+    margin-top: -330px;
+}
+.choos-list li{
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    float: right;
+    
+}
+.choos-list{
+    margin-left: 250px;
+    position: absolute;
+}
+.choos-list li{
+    color: crimson;
+    margin-left: 10px;
+}
+.choos-list .li1{
+    color:black;
+
+}
+.choos-list .li2{
+    color: black;
+}
+.li2:hover {
+    color: crimson;
+}
+.li1:hover {
+    color:crimson;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+.award{
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/ian-dooley-FoF0w-d6Z74-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.award-child{
+    float: left;
+    /* width: 30%; */
+    width: 20%;
+    margin-top: 130px;
+    margin-left: 50px;
+    color: crimson;
+}
+.i-award{
+    font-size: 35px;
+    margin-left: 93px;
+}
+.award-users{
+    margin-top: 10px;
+    text-align: center;
+    color:crimson;
+}
+.award-para{
+    font-size: 20px;
+    text-align: center;
+    color:crimson;
+    text-transform: capitalize;
+}
+/* //////////////////////////////////////////////////////////////// */
+.price{
+    padding-top: 100px;
+    height: 700px;
+}
+.price-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 35px;
+    letter-spacing: 1;
+}
+.pricing-line{
+    background-color:black;
+    width: 60px;
+    height: 5px;
+    margin-left: 540px;
+    margin-top: 10px;
+
+}
+.price-child{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 60px;
+    margin-top: 50px;
+    padding: 25px 15px;
+}
+.childp-title{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.childp-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid crimson;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+.child-para{
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.child-para1{
+    color: black;
+    font-size: 20px;
+    font-weight:100;
+    text-align: center;
+    text-transform:uppercase;
+}
+.child-p{
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}
+.btn-price{
+    width: 130px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid crimson;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.price-child::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    opacity: 1;
+}
+.price-child:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.price-child:hover .childp-title{
+    color: crimson;
+
+}
+.price-child:hover .child-para{
+    color: crimson;
+    transition: 1s;
+}
+.price-child:hover .child-para1{
+    color: crimson;
+    transition: 1s;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
+.its-me{
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/pexels-felix-mittermeier-956999.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.me-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.circle-info{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 120;
+    left: 200;
+    background-image: url(../image/efefcdfd-5304-40d5-ad87-460653a4c226.jpg);
+    background-size: cover;
+}
+.me-title{
+    position: absolute;
+    top: 130;
+    left: 290;
+    text-transform: capitalize;
+    color:crimson;
+}
+.me-para{
+    position: absolute;
+    top:160;
+    left: 290;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: crimson;
+}
+.me-about{
+    position: absolute;
+    top:220;
+    left: 200;
+    width: 40%;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.circle-info1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 120;
+    left: 800;
+    background-image: url(../image/efefcdfd-5304-40d5-ad87-460653a4c226.jpg);
+    background-size: cover;
+
+}
+.me-title1{
+    position: absolute;
+    top: 130;
+    left: 890;
+    text-transform: capitalize;
+    color:crimson;
+
+}
+.me-para1{
+    position: absolute;
+    top:160;
+    left: 890;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: crimson;
+}
+.me-about1{
+    position: absolute;
+    top:220;
+    left: 800;
+    width: 40%;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.team-content{
+    padding-top: 100px;
+    height: 500px;
+}
+.team-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 35px;
+    letter-spacing: 1;
+}
+.team-line{
+    background-color:black;
+    width: 60px;
+    height: 5px;
+    margin-left: 540px;
+    margin-top: 10px;
+
+}
+.team-item{
+    float: left;
+    margin-top: 80px;
+    background-color:#a8a8a8;
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    opacity: 1;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.ww{
+    margin: 0 5%;
+    margin-top: 80px;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    
+}
+.team-item:hover .team-overlay{
+    visibility:visible;
+}
+
+.team-overlay a{
+    display: block;
+    font-size: 30px;
+    width: 40px;
+    background-color: crimson;
+    color:fff;
+    font-size: 30px;
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-info-title{
+    text-transform: capitalize;
+    color: black;
+}
+.team-info-para{
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+.team-item:hover .team-info-title{
+    color: crimson;
+}
+.team-item:hover .team-info-para{
+    color: fff;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.recent-content{
+      padding-top: 100px;
+      height: 630px;
+     
+}
+.recent-title{
+    text-align: center;
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 35px;
+    letter-spacing: 1;
+}
+.recent-line{
+    background-color:black;
+    width: 60px;
+    height: 5px;
+    margin-left: 540px;
+    margin-top: 10px;
+}
+
+.recent-child{
+    float: left;
+    /* width: 250px; */
+    height: 400px;
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.recent-child::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    opacity: 1;
+    transition: 1s;
+}
+.recent-child:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.re{
+    margin: 0 5%;
+    margin-top: 50px;
+}
+.recent-span{
+    margin-top: 30px;
+}
+.ir{
+    margin-top: 30px;
+    color: crimson;
+}
+.title-recent-child{
+    margin-top: 20px;
+}
+.recent-para{
+    margin-top: 20px;
+}
+.recent-child a{
+    display: block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: crimson;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+.footer-content{
+    width: 100%;
+    height: 300px;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: relative;
+
+
+}
+.footer-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.footer-item img{
+    margin-top: 15px;
+}
+.footer-item a{
+    display: inline-block;
+   font-size: 30px;
+   background-color:black;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   color:crimson;
+   margin-top: 20px;
+    
+}
+.footer-item a i{
+    line-height: 50px;
+}
+.footer-copy{
+    margin-top: 20px;
+    font-size: 13px;
+    color: fff;
+}
+/* ////////////////////////////////////////////the end//////////////////////////////// */
